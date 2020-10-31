@@ -35,7 +35,7 @@ li {
   position: relative;
   font-size: 16px;
   top: -34px;
-  right: 10px;
+  right: 8px;
 }
 .overview {
   margin-bottom: 20px;
@@ -48,4 +48,12 @@ li {
 .weather-rap {
   max-width: 600px;
   margin: 30px auto;
+}
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
