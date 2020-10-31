@@ -17,19 +17,27 @@
     <div class="container">
       <div class="weather-rap">
         <div class="main-app">
-          <h1>London</h1>
-          <div>
-            <ul>
-              <li>Saturday 12:00</li>
-              <li>Rain</li>
-            </ul>
+          <div class="overview">
+            <h1>London</h1>
+            <div>
+              <ul>
+                <li>Saturday 12:00</li>
+                <li>Rain</li>
+              </ul>
+            </div>
             <div class="row">
               <div class="colum-md-6">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/rain.png"
-                  alt="rain"
-                />
-                14 °C | °F
+                <div class="clearfix weather-temperature">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/rain.png"
+                    alt="rain"
+                    class="float-left"
+                  />
+                  <div class="float-left">
+                    <strong>14 </strong>
+                    <span class="units">°C | <a href="#"> °F</a></span>
+                  </div>
+                </div>
               </div>
               <div class="colum-md-6">
                 <ul>
