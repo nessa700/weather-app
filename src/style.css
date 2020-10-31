@@ -3,11 +3,13 @@ body {
 }
 
 .main-app {
-  max-width: 600px;
-  margin: 30px auto;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 10px;
+}
+.weather-rap {
+  max-width: 600px;
+  margin: 30px auto;
 }
 h1 {
   color: #878787;
