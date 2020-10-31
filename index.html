@@ -9,6 +9,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather</title>
   </head>
@@ -18,11 +19,11 @@
       <div class="weather-rap">
         <div class="main-app">
           <div class="overview">
-            <h1>London</h1>
+            <h1 id="city"></h1>
             <div>
               <ul>
                 <li>Saturday 12:00</li>
-                <li>Rain</li>
+                <li id="descrptive"></li>
               </ul>
             </div>
             <div class="row">
@@ -34,16 +35,16 @@
                     class="float-left"
                   />
                   <div class="float-left">
-                    <strong>14 </strong>
+                    <strong id="temperature"></strong>
                     <span class="units">°C | <a href="#"> °F</a></span>
                   </div>
                 </div>
               </div>
               <div class="colum-md-6">
                 <ul>
-                  <li>Precipitation: 94%</li>
-                  <li>Humidity: 91%</li>
-                  <li>Wind: 15 mph</li>
+                  <li>Precipitation:</li>
+                  <li>Humidity: <span id="humidity"> </span>%</li>
+                  <li>Wind: <span id="Wind"> </span> mph</li>
                 </ul>
               </div>
             </div>
