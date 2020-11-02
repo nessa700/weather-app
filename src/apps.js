@@ -100,7 +100,12 @@ function searchLocation(position) {
 }
 function getcurrentPosition(event) {
   event.preventDefault();
-  navigator.geolocation.getcurrentPosition(searchLocation);
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+function getcurrentPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
 function displayFahrenheitTemperature(event) {
