@@ -3,10 +3,11 @@ body {
 }
 h1 {
   color: #7b68ee;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 50px;
   line-height: 28px;
   margin-bottom: 1cm;
+  margin-top: 1cm;
 }
 ul {
   margin: 0;
@@ -28,7 +29,7 @@ li {
 
 .weather-temperature strong {
   font-size: 64px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 1;
 }
 .weather-temperature .units {
