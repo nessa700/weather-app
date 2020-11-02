@@ -97,12 +97,13 @@ function searchLocation(position) {
   let apiUrl = "https://api.openweathermap.org/data/2.5/weather";
   let apiCall = `${apiUrl}?lat=${lat}&lon=${long}&appid=${apiKey}&units=${units}`;
   axios.get(apiCall).then(displayTemperature);
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayforcast);
+  function getcurrentPosition(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  }
 }
-function getcurrentPosition(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-
 function getcurrentPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
